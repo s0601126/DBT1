@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="classicmodelsModelStoreContainer" CdmEntityContainer="classicmodelsEntities">
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="classicmodelsModel.customers">
+        <MappingFragment StoreEntitySet="customers">
+          <ScalarProperty Name="customerNumber" ColumnName="customerNumber" />
+          <ScalarProperty Name="customerName" ColumnName="customerName" />
+          <ScalarProperty Name="contactLastName" ColumnName="contactLastName" />
+          <ScalarProperty Name="contactFirstName" ColumnName="contactFirstName" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="addressLine1" ColumnName="addressLine1" />
+          <ScalarProperty Name="addressLine2" ColumnName="addressLine2" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="salesRepEmployeeNumber" ColumnName="salesRepEmployeeNumber" />
+          <ScalarProperty Name="creditLimit" ColumnName="creditLimit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="classicmodelsModel.employees">
+        <MappingFragment StoreEntitySet="employees">
+          <ScalarProperty Name="employeeNumber" ColumnName="employeeNumber" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="extension" ColumnName="extension" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="officeCode" ColumnName="officeCode" />
+          <ScalarProperty Name="reportsTo" ColumnName="reportsTo" />
+          <ScalarProperty Name="jobTitle" ColumnName="jobTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="offices">
+      <EntityTypeMapping TypeName="classicmodelsModel.offices">
+        <MappingFragment StoreEntitySet="offices">
+          <ScalarProperty Name="officeCode" ColumnName="officeCode" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="addressLine1" ColumnName="addressLine1" />
+          <ScalarProperty Name="addressLine2" ColumnName="addressLine2" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="postalCode" ColumnName="postalCode" />
+          <ScalarProperty Name="territory" ColumnName="territory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orderdetails">
+      <EntityTypeMapping TypeName="classicmodelsModel.orderdetails">
+        <MappingFragment StoreEntitySet="orderdetails">
+          <ScalarProperty Name="orderNumber" ColumnName="orderNumber" />
+          <ScalarProperty Name="productCode" ColumnName="productCode" />
+          <ScalarProperty Name="quantityOrdered" ColumnName="quantityOrdered" />
+          <ScalarProperty Name="priceEach" ColumnName="priceEach" />
+          <ScalarProperty Name="orderLineNumber" ColumnName="orderLineNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="classicmodelsModel.orders">
+        <MappingFragment StoreEntitySet="orders">
+          <ScalarProperty Name="orderNumber" ColumnName="orderNumber" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+          <ScalarProperty Name="requiredDate" ColumnName="requiredDate" />
+          <ScalarProperty Name="shippedDate" ColumnName="shippedDate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="comments" ColumnName="comments" />
+          <ScalarProperty Name="customerNumber" ColumnName="customerNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payments">
+      <EntityTypeMapping TypeName="classicmodelsModel.payments">
+        <MappingFragment StoreEntitySet="payments">
+          <ScalarProperty Name="customerNumber" ColumnName="customerNumber" />
+          <ScalarProperty Name="checkNumber" ColumnName="checkNumber" />
+          <ScalarProperty Name="paymentDate" ColumnName="paymentDate" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="productlines">
+      <EntityTypeMapping TypeName="classicmodelsModel.productlines">
+        <MappingFragment StoreEntitySet="productlines">
+          <ScalarProperty Name="productLine" ColumnName="productLine" />
+          <ScalarProperty Name="textDescription" ColumnName="textDescription" />
+          <ScalarProperty Name="htmlDescription" ColumnName="htmlDescription" />
+          <ScalarProperty Name="image" ColumnName="image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="classicmodelsModel.products">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="productCode" ColumnName="productCode" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="productLine" ColumnName="productLine" />
+          <ScalarProperty Name="productScale" ColumnName="productScale" />
+          <ScalarProperty Name="productVendor" ColumnName="productVendor" />
+          <ScalarProperty Name="productDescription" ColumnName="productDescription" />
+          <ScalarProperty Name="quantityInStock" ColumnName="quantityInStock" />
+          <ScalarProperty Name="buyPrice" ColumnName="buyPrice" />
+          <ScalarProperty Name="MSRP" ColumnName="MSRP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
